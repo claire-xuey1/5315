@@ -18,12 +18,11 @@
             success: function(xml) {  
              $(xml).find('data').each(function(){  
               t.row.add( [
-                $(this).find('name').text(),
-                $(this).find('designation').text(),
-                $(this).find('office').text(),
-                $(this).find('extension').text(),
-                $(this).find('joining_date').text(),
-                $(this).find('salary').text()
+                $(this).find('sudentID').text(),
+                $(this).find('student_name').text(),
+                $(this).find('student_major').text(),
+                $(this).find('student_hobby').text(),
+                $(this).find('groupID').text()
               ] ).draw( false );
              });
             }
@@ -36,23 +35,21 @@
   <table id="chart" class="display" cellspacing="0" width="100%">
     <thead>
         <tr>
-            <th>Name</th>
-            <th>Designation</th>
-            <th>Office</th>
-            <th>Extension</th>
-            <th>Joining Date</th>
-            <th>Salary</th>
+            <th>sudentID</th>
+            <th>sudent_name</th>
+            <th>sudent_major</th>
+            <th>sudent_hobby</th>
+            <th>groupID</th>
         </tr>
     </thead>
 
     <tfoot>
         <tr>
-            <th>Name</th>
-            <th>Designation</th>
-            <th>Office</th>
-            <th>Extension</th>
-            <th>Joining Date</th>
-            <th>Salary</th>
+           <th>sudentID</th>
+            <th>sudent_name</th>
+            <th>sudent_major</th>
+            <th>sudent_hobby</th>
+            <th>groupID</th>
         </tr>
     </tfoot>
   </table>
